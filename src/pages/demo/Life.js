@@ -1,5 +1,6 @@
 import React from 'react';
 import Child from './child';
+import './index.less';
 
 export default class Life extends React.Component {
     constructor(props) {
@@ -28,7 +29,7 @@ export default class Life extends React.Component {
         }
 
         // render方法必须要有return，
-        return <div style={style}>
+        return <div className="content">
 
             <p>React生命周期</p>
             <button onClick = {this.handleAdd}>dianji</button>
@@ -38,6 +39,6 @@ export default class Life extends React.Component {
             <Child name={this.state.count}></Child>
 
         </div>
-    }
+    } 
 
 }
